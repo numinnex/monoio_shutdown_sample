@@ -1,0 +1,8 @@
+[package]
+name = "test_ctrl_c"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-channel = "2.3.1"
+monoio = { version = "0.2.3", features = ["async-cancel", "sync", "signal", "tracing", "zero-copy", "bytes", "legacy", "macros", "utils", "io-uring", "iouring"] }
